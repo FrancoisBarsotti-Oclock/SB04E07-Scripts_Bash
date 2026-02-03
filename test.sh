@@ -64,3 +64,11 @@ if [ 100 == 100 ]
 then
     echo "OK"
 fi
+
+# Pour les comparaisons arithmétique, on va utiliser les ((  ))
+# ET SEULEMENT DANS CE CAS
+# On peux utiliser < > <= >= != ==
+if (( 101 <= 100  ))
+then
+    echo "c logik"
+fi
