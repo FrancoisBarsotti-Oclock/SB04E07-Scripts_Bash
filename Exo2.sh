@@ -18,7 +18,7 @@ then
     exit 1
 fi
 
-DATE=$(date +"%Y-%m-%d_%H-%M-%S") # Récupération de la date actuelle, selon format décidé par nous
+DATE=$(date +"%Y-%m-%d_%H-%M-%S") # String pour la date actuelle, selon format décidé par nous
 
 echo $DATE
 
