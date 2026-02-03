@@ -78,3 +78,13 @@ for user in "Camille" "Francois" "Olivier" "Printana"
 do
     echo "Bonjour $user"
 done
+
+# https://fr.wikibooks.org/wiki/Programmation_Bash/Fonctions
+function test() {
+    echo "Bonjour $1"
+    echo "Bonjour $2"
+}
+
+test François
+
+# https://fr.wikibooks.org/wiki/Programmation_Bash
