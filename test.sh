@@ -49,3 +49,18 @@ fi
 # if [ condition1 -a condition2 ]
 # then
 # fi
+
+# L'equivalent du -Filter -like dans powershell
+# Permet de vérifier si une chaine de caractères est contenue dans une autre
+# *ois* permet de vérifier qu'il y a les lettres ois dans la variable
+# Meme si il ya du texte avant ou apres
+# Ou meme si il y en a pas
+if [[ $firstName == *ois* ]]
+then
+    echo "Il y a les lettres ois dans ton prenom"
+fi
+
+if [ 100 == 100 ]
+then
+    echo "OK"
+fi
