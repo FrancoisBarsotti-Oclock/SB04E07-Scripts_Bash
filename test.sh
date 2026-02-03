@@ -72,3 +72,9 @@ if (( 101 <= 100  ))
 then
     echo "c logik"
 fi
+
+# https://fr.wikibooks.org/wiki/Programmation_Bash/Boucles
+for user in "Camille" "Francois" "Olivier" "Printana"
+do
+    echo "Bonjour $user"
+done
