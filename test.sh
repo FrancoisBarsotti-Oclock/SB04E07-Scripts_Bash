@@ -15,5 +15,37 @@ echo -e "Je suis \n sur 2 lignes" # Le \n marque l'endroit de coupure (retour à
 echo -e "\t test" # Le \t fait la tabulation à la ligne
 
 # Le nom de la variable et le "=" doivent absolument etre collé pour que cela fonctionne
-firstName=Robin
+firstName=François
 echo "Bonjour $firstName"
+
+# Pour stocker le contenu d'une commande bash dans une variable, on entour la commande de $(command)
+var=$(hostname)
+echo $var
+
+# https://buzut.net/maitriser-les-conditions-en-bash/
+# Je vérifie que le fichier test.log existe
+if [ -f test.log ]
+# Si oui, alors
+then
+    echo "Le fichier de log existe"
+# Retour de la méthode python avec elif a la place de elseif
+elif [ -f test.sh ]
+then
+    echo "Le script existe"
+# Sinon
+else
+    echo "Le fichier n'existe pas"
+# Pour dire que ma condition est finie, je met fi (if a l'envers)
+fi
+
+# -o = -or = ||
+# Permet de dire soit l'une soit l'autre ou les 2 conditions doivent etre vrai
+# if [ condition1 -o condition2] 
+# then
+# fi
+
+# -a = -and = &&
+# Permet de dire que les 2 conditions doivent etre vrai
+# if [ condition1 -a condition2 ]
+# then
+# fi
