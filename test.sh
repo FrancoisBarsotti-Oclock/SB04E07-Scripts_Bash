@@ -13,3 +13,7 @@ echo "Ligne numéro 2" >> ./test.log
 # # Sans le -e, le \n ou le \t ne sont pas interprétés, donc ne fonctionne pas et sont affichés comme une chaine de caractere
 echo -e "Je suis \n sur 2 lignes" # Le \n marque l'endroit de coupure (retour à la ligne)
 echo -e "\t test" # Le \t fait la tabulation à la ligne
+
+# Le nom de la variable et le "=" doivent absolument etre collé pour que cela fonctionne
+firstName=Robin
+echo "Bonjour $firstName"
