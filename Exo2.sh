@@ -10,7 +10,7 @@ then
     exit 1
 fi
 
-SOURCE=$1 # Argument donné lors de la première exécution d'Exo2 (avec route du fichier le contenant)
+SOURCE=$1 # Argument donné lors de la première exécution d'Exo2 (avec chemin du fichier le contenant)
 
 if [ ! -d $SOURCE ] #Vérification de l'existance du dossier
 then
@@ -21,3 +21,5 @@ fi
 DATE=$(date +"%Y-%m-%d_%H-%M-%S") # Récupération de la date actuelle, selon format décidé par nous
 
 echo $DATE
+
+FOLDER_NAME=$(basename $SOURCE)
