@@ -23,3 +23,7 @@ DATE=$(date +"%Y-%m-%d_%H-%M-%S") # Récupération de la date actuelle, selon fo
 echo $DATE
 
 FOLDER_NAME=$(basename $SOURCE)
+
+ARCHIVE_NAME="${FOLDER_NAME}_backup_${DATE}.tar.gz"
+
+tar -czf $ARCHIVE_NAME $SOURCE # Création de l'archive en format .tar.gz
