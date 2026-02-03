@@ -85,6 +85,6 @@ function test() {
     echo "Bonjour $2"
 }
 
-test François
+test François Barsotti
 
 # https://fr.wikibooks.org/wiki/Programmation_Bash
